@@ -3,6 +3,7 @@ import Header from 'components/Header';
 import About from 'routes/About';
 import Blog from 'routes/Blog';
 import Works from 'routes/Works';
+import WorkContentDetail from 'routes/WorkContentDetail';
 
 const Router = () => (
   <HashRouter>
@@ -10,6 +11,7 @@ const Router = () => (
     <Routes>
       <Route path="/" element={<About />} />
       <Route path="/works" element={<Works />} />
+      <Route path="/works/:detailId" element={<WorkContentDetail />} />
       <Route path="/blog" element={<Blog />} />
     </Routes>
   </HashRouter>
