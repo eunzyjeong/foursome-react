@@ -1,0 +1,45 @@
+// point color
+$blue: #009fe3;
+$yellow: #ffe500;
+$pink: #e6007e;
+$en-font: 'roc-grotesk', sans-serif;
+
+header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-bottom: 2px solid #000000;
+}
+
+.navbar {
+  display: flex;
+  margin-left: auto;
+
+  &__list {
+    font-family: $en-font;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+
+    &:nth-child(1).active,
+    &:nth-child(1):hover {
+      color: $yellow;
+    }
+
+    &:nth-child(2).active,
+    &:nth-child(2):hover {
+      color: $blue;
+    }
+
+    &:nth-child(3).active,
+    &:nth-child(3):hover {
+      color: $pink;
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
