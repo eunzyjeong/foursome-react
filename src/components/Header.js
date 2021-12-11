@@ -15,10 +15,18 @@ const Header = () => {
         <li className={`navbar__list ${pathname === '/' ? 'active' : ''}`}>
           <Link to="/">about</Link>
         </li>
-        <li className={`navbar__list ${pathname === '/works' ? 'active' : ''}`}>
+        <li
+          className={`navbar__list ${
+            pathname.includes('/works') ? 'active' : ''
+          }`}
+        >
           <Link to="/works">works</Link>
         </li>
-        <li className={`navbar__list ${pathname === '/blog' ? 'active' : ''}`}>
+        <li
+          className={`navbar__list ${
+            pathname.includes('/blog') ? 'active' : ''
+          }`}
+        >
           <Link to="/blog">blog</Link>
         </li>
       </ul>
