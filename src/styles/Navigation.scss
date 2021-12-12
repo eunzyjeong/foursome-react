@@ -15,7 +15,15 @@ nav {
   line-height: 4vw;
   margin-top: 16px;
 
-  &__list a:hover {
-    color: $blue;
+  &__item {
+    transition: color 0.2s ease-in-out;
+
+    &.blue:hover {
+      color: $blue;
+    }
+
+    &.pink:hover {
+      color: $pink;
+    }
   }
 }
