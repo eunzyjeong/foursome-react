@@ -17,9 +17,9 @@ const BlogPost = () => {
   ];
 
   return (
-    <div className="BlogPost">
+    <main className="BlogPost">
       <Navigation navList={navList} currentPath="/blog" />
-      <div className="post">
+      <section className="post">
         <h1 className="post__title">어디든 자유롭게 꾸며봐</h1>
         <div className="post-contents">
           <div className="post-contents__img">
@@ -31,8 +31,8 @@ const BlogPost = () => {
             인쇄(양면)스티커 등등 알려드릴거에요!
           </p>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

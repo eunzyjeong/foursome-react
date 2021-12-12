@@ -21,7 +21,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="Blog">
+    <section className="Blog">
       <Navigation navList={navList} currentPath="/blog" />
       <div className="blog-list">
         {BlogData.map(content => (
@@ -49,7 +49,7 @@ const Blog = () => {
           <img src={pink} alt="핑크색" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

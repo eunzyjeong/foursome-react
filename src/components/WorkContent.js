@@ -5,14 +5,14 @@ import 'styles/WorkContent.scss';
 
 const WorkContents = ({ worksData }) => {
   return (
-    <div className="WorkContent">
-      <div className="work-content">
+    <section className="WorkContent">
+      <article className="work-content">
         {worksData.map(content => (
           <React.Fragment key={content.id}>
             <Link to={`/works/${content.id}`}>
-              <div className="work-content__title">
+              <header className="work-content__title">
                 <h1>{content.title}</h1>
-              </div>
+              </header>
             </Link>
             <ul className="work-content__list">
               <li className="work-content__item">{content.client}</li>
@@ -24,8 +24,8 @@ const WorkContents = ({ worksData }) => {
             </div>
           </React.Fragment>
         ))}
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 

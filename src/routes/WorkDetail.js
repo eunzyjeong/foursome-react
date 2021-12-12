@@ -10,9 +10,9 @@ const WorkDetail = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="detail">
+    <main className="detail">
       <h1 className="detail__title">{content.title}</h1>
-      <div className="detail__content">
+      <section className="detail__content">
         <div className="detail__content--text">
           <ul className="detail__list">
             <li className="detail__item">
@@ -40,8 +40,8 @@ const WorkDetail = () => {
             </div>
           ))}
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
