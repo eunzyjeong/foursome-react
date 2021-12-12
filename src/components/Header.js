@@ -7,7 +7,7 @@ const Header = () => {
   const { pathname } = useLocation();
 
   return (
-    <header>
+    <header className="Header">
       <Link to="/">
         <Logo />
       </Link>
