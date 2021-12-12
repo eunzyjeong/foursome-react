@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import Work from 'data/Work';
+import WorkData from 'data/Work';
 
 import 'styles/WorkDetail.scss';
 
 const WorkDetail = () => {
   const { detailId } = useParams();
-  const [content] = useState(Work[`${+detailId - 1}`]);
+  const [content] = useState(WorkData[`${+detailId - 1}`]);
   const navigate = useNavigate();
 
   return (
