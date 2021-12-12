@@ -25,8 +25,8 @@ const Blog = () => {
       <Navigation navList={navList} currentPath="/blog" />
       <div className="blog-list">
         {BlogData.map(content => (
-          <Link to={`/blog/${content.id}`}>
-            <div className="blog-content" key={content.id}>
+          <Link to={`/blog/${content.id}`} key={content.id}>
+            <div className="blog-content">
               <div className="blog-content__img">
                 <img src={content.thumbnail} alt={content.title} />
               </div>
