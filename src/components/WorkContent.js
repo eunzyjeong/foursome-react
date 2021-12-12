@@ -12,7 +12,11 @@ const WorkContents = ({ worksData }) => {
             <React.Fragment key={content.id}>
               <Link to={`/works/${content.id}`}>
                 <header className="work-content__title">
-                  <h1>{content.title}</h1>
+                  <div className="marquee-overflow">
+                    {content.title_array.map((title, index) => (
+                      <h1 key={index}>{title}</h1>
+                    ))}
+                  </div>
                 </header>
               </Link>
               <ul className="work-content__list">

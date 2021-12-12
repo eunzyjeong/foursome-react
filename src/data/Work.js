@@ -4,7 +4,13 @@ import detail_img1 from 'img/work_detail.png';
 const Work = [
   {
     id: 1,
-    title: '보이지 않는 경계',
+    title_array: [
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *'
+    ],
     client: '옐토',
     category: 'Exhibition',
     published_year: 2021,
@@ -15,7 +21,13 @@ const Work = [
   },
   {
     id: 2,
-    title: '보이지 않는 경계',
+    title_array: [
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *'
+    ],
     client: '옐토',
     category: 'Exhibition',
     published_year: 2021,
@@ -25,7 +37,13 @@ const Work = [
   },
   {
     id: 3,
-    title: '보이지 않는 경계',
+    title_array: [
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *',
+      '보이지 않는 경계선 지우개展 *'
+    ],
     client: '옐토',
     category: 'Exhibition',
     published_year: 2021,

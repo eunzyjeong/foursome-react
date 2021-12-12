@@ -11,7 +11,13 @@ const WorkDetail = () => {
 
   return (
     <main className="detail">
-      <h1 className="detail__title">{content.title}</h1>
+      <header className="detail__title">
+        <div className="marquee-overflow">
+          {content.title_array.map((title, index) => (
+            <h1 key={index}>{title}</h1>
+          ))}
+        </div>
+      </header>
       <section className="detail__content">
         <article className="detail__content--text">
           <ul className="detail__list">
