@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from 'components/Navigation';
-import WorkContents from 'components/WorkContent';
+import WorkContent from 'components/WorkContent';
 import WorksData from 'data/Work';
 
 import 'styles/Works.scss';
@@ -10,8 +10,8 @@ const Works = () => {
 
   return (
     <div className="Works">
-      <Navigation navList={navList} />
-      <WorkContents worksData={WorksData} />
+      <Navigation navList={navList} currentPath="/works" />
+      <WorkContent worksData={WorksData} />
     </div>
   );
 };
