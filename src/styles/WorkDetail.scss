@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 30% 70%;
     width: 100%;
+    height: calc(100vh - 189.84px);
 
     &--text {
       border-right: 2px solid #000;
@@ -18,6 +19,7 @@
     &--img {
       width: 100%;
       height: 100%;
+      position: absolute;
     }
 
     &--img-container {

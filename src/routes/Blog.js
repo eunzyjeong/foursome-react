@@ -21,35 +21,37 @@ const Blog = () => {
   ];
 
   return (
-    <section className="Blog">
+    <main className="Blog">
       <Navigation navList={navList} currentPath="/blog" />
-      <div className="blog-list">
-        {BlogData.map(content => (
-          <Link to={`/blog/${content.id}`} key={content.id}>
-            <div className="blog-content">
-              <div className="blog-content__img">
-                <img src={content.thumbnail} alt={content.title} />
+      <div className="scroll-area">
+        <section className="blog-list">
+          {BlogData.map(content => (
+            <Link to={`/blog/${content.id}`} key={content.id}>
+              <div className="blog-content">
+                <div className="blog-content__img">
+                  <img src={content.thumbnail} alt={content.title} />
+                </div>
+                <div className="blog-content__text">
+                  <h3 className="blog-content__title">{content.title}</h3>
+                  <span className="blog-content__category">
+                    {content.catogory}
+                  </span>
+                </div>
               </div>
-              <div className="blog-content__text">
-                <h3 className="blog-content__title">{content.title}</h3>
-                <span className="blog-content__category">
-                  {content.catogory}
-                </span>
-              </div>
-            </div>
-          </Link>
-        ))}
-        <div className="blog-colorbox">
-          <img src={blue} alt="파란색" />
-        </div>
-        <div className="blog-colorbox">
-          <img src={yellow} alt="노란색" />
-        </div>
-        <div className="blog-colorbox">
-          <img src={pink} alt="핑크색" />
-        </div>
+            </Link>
+          ))}
+          <div className="blog-colorbox">
+            <img src={blue} alt="파란색" />
+          </div>
+          <div className="blog-colorbox">
+            <img src={yellow} alt="노란색" />
+          </div>
+          <div className="blog-colorbox">
+            <img src={pink} alt="핑크색" />
+          </div>
+        </section>
       </div>
-    </section>
+    </main>
   );
 };
 

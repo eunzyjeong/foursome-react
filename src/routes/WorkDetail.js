@@ -13,7 +13,7 @@ const WorkDetail = () => {
     <main className="detail">
       <h1 className="detail__title">{content.title}</h1>
       <section className="detail__content">
-        <div className="detail__content--text">
+        <article className="detail__content--text">
           <ul className="detail__list">
             <li className="detail__item">
               <p className="detail__item--subtitle">Client</p>
@@ -32,13 +32,15 @@ const WorkDetail = () => {
           <button className="btn-back" onClick={() => navigate(-1)}>
             ← back
           </button>
-        </div>
-        <div className="detail__content--img">
-          {content.detail_img.map((img, index) => (
-            <div className="detail__content--img-container" key={index}>
-              <img src={img} alt={content.title} />
-            </div>
-          ))}
+        </article>
+        <div className="scroll-area">
+          <article className="detail__content--img">
+            {content.detail_img?.map((img, index) => (
+              <div className="detail__content--img-container" key={index}>
+                <img src={img} alt={content.title} />
+              </div>
+            ))}
+          </article>
         </div>
       </section>
     </main>
