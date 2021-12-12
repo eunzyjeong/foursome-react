@@ -1,0 +1,19 @@
+$blue: #009fe3;
+
+#map {
+  display: block;
+  width: 100%;
+  height: 350px;
+}
+
+.customoverlay {
+  position: relative;
+  top: -65px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid $blue;
+}
