@@ -29,7 +29,9 @@ const WorkDetail = () => {
             </li>
           </ul>
           <p className="detail__description">{content.description}</p>
-          <button onClick={() => navigate(-1)}>back</button>
+          <button className="btn-back" onClick={() => navigate(-1)}>
+            ← back
+          </button>
         </div>
         <div className="detail__content--img">
           {content.detail_img.map((img, index) => (
