@@ -12,6 +12,7 @@ header {
 }
 
 .navbar {
+  height: 80%;
   display: flex;
   margin-left: auto;
 
@@ -22,6 +23,12 @@ header {
     letter-spacing: 0;
     text-transform: uppercase;
     transition: color 0.2s ease-in-out;
+
+    & > a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
 
     &:nth-child(1).active,
     &:nth-child(1):hover {
