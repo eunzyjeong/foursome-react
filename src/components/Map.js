@@ -19,14 +19,16 @@ const Map = () => {
         <span>포썸</span>
       </div>`;
 
-    const customOverlay = new kakao.maps.CustomOverlay({
+    new kakao.maps.CustomOverlay({
       map,
       position,
       content
     });
 
     marker.setMap(map);
-  }, []);
+
+    return () => {};
+  });
 
   return (
     <div
