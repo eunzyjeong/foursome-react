@@ -8,7 +8,9 @@ const About = () => {
   return (
     <main className="About">
       <section className="about--foursome">
-        <h1 className="foursome__title">Four colors make Something special!</h1>
+        <h1 className="foursome__title">
+          Four colors make <br /> Something special!
+        </h1>
         <p className="foursome__description">
           포썸은 C-cyan M-magenta Y-yellow K-black 4가지 색으로 공간을 꾸미는
           실사출력 업체입니다. B2B 부터 B2C까지 다양한 소비자의 눈높이에 맞춰
