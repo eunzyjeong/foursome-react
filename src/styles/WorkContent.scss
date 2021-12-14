@@ -72,3 +72,26 @@
     transform: translateX(-100%);
   }
 }
+
+@media screen and (max-width: 980px) {
+  .work-content {
+    &__title {
+      height: fit-content;
+
+      h1 {
+        font-size: 16px;
+        padding: 8px 0;
+      }
+    }
+
+    &__list {
+      height: fit-content;
+    }
+
+    &__item {
+      font-size: 12px;
+      line-height: 1;
+      padding: 8px;
+    }
+  }
+}

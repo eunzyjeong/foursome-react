@@ -2,3 +2,9 @@
   display: grid;
   grid-template-columns: 30% 70%;
 }
+
+@media screen and (max-width: 980px) {
+  .Works {
+    display: block;
+  }
+}
