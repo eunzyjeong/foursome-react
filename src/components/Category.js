@@ -9,6 +9,7 @@ const Category = ({ navList, currentPath }) => {
   return (
     <nav>
       <ul className="category">
+        <li className="category__mobile">All</li>
         {navList.map((item, index) => (
           <li key={index} className="category__list">
             <Link
