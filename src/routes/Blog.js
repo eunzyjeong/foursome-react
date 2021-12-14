@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navigation from 'components/Navigation';
+import Category from 'components/Category';
 import BlogData from 'data/Blog';
 
 import 'styles/Blog.scss';
@@ -22,7 +22,7 @@ const Blog = () => {
 
   return (
     <main className="Blog">
-      <Navigation navList={navList} currentPath="/blog" />
+      <Category navList={navList} currentPath="/blog" />
       <div className="scroll-area">
         <section className="blog-list">
           {BlogData.map(content => (

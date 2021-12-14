@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import 'styles/Navigation.scss';
+import 'styles/Category.scss';
 
-const Navigation = ({ navList, currentPath }) => {
+const Category = ({ navList, currentPath }) => {
   const { pathname } = useLocation();
 
   return (
@@ -30,4 +30,4 @@ const Navigation = ({ navList, currentPath }) => {
   );
 };
 
-export default Navigation;
+export default Category;

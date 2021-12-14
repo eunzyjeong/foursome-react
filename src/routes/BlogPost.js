@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from 'components/Navigation';
+import Category from 'components/Category';
 
 import 'styles/BlogPost.scss';
 import postImg_1 from 'img/blog_post.png';
@@ -18,7 +18,7 @@ const BlogPost = () => {
 
   return (
     <main className="BlogPost">
-      <Navigation navList={navList} currentPath="/blog" />
+      <Category navList={navList} currentPath="/blog" />
       <div className="scroll-area">
         <section className="post">
           <h1 className="post__title">어디든 자유롭게 꾸며봐</h1>

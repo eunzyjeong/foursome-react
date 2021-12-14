@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from 'components/Navigation';
+import Category from 'components/Category';
 import WorkContent from 'components/WorkContent';
 import WorksData from 'data/Work';
 
@@ -10,7 +10,7 @@ const Works = () => {
 
   return (
     <div className="Works">
-      <Navigation navList={navList} currentPath="/works" />
+      <Category navList={navList} currentPath="/works" />
       <WorkContent worksData={WorksData} />
     </div>
   );
