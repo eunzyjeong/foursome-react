@@ -27,11 +27,11 @@
   width: 100%;
   position: absolute;
 
-  & > article:not(:last-child) {
+  article:not(:last-child) {
     border-bottom: 2px solid #000;
   }
 
-  & .foursome__description {
+  .foursome__description {
     padding: 48px 0;
   }
 }

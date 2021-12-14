@@ -2,12 +2,12 @@
 $blue: #009fe3;
 $yellow: #ffe500;
 $pink: #e6007e;
-$en-font: 'roc-grotesk', sans-serif;
+$en-font: 'Roc Grotesk', sans-serif;
 
 .Header {
+  height: 80px;
   display: flex;
   align-items: center;
-  height: 80px;
   border-bottom: 2px solid #000000;
 }
 
@@ -24,7 +24,7 @@ $en-font: 'roc-grotesk', sans-serif;
     text-transform: uppercase;
     transition: color 0.2s ease-in-out;
 
-    & > a {
+    a {
       height: 100%;
       display: flex;
       align-items: center;

@@ -20,7 +20,7 @@ $categoryColor: #959595;
   margin-bottom: 0;
 
   &__img {
-    & > img {
+    img {
       width: 100%;
       display: block;
       filter: brightness(70%);
@@ -53,7 +53,7 @@ $categoryColor: #959595;
 .blog-colorbox {
   width: 100%;
 
-  & img {
+  img {
     width: 100%;
     display: block;
   }
