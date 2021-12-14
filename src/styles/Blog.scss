@@ -74,4 +74,21 @@ $categoryColor: #959595;
   .blog-colorbox:not(:last-child) {
     margin-bottom: 16px;
   }
+
+  .blog-content {
+    &__text {
+      bottom: 16px;
+      right: 16px;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 1.7142857143;
+    }
+
+    &__category {
+      font-size: 12px;
+      line-height: 2;
+    }
+  }
 }
