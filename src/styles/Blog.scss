@@ -58,3 +58,20 @@ $categoryColor: #959595;
     display: block;
   }
 }
+
+@media screen and (max-width: 980px) {
+  .Blog {
+    display: block;
+  }
+
+  .blog-list {
+    display: block;
+    position: relative;
+    margin-top: 16px;
+  }
+
+  .blog-content,
+  .blog-colorbox:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
