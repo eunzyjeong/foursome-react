@@ -43,3 +43,9 @@ ol {
   list-style: none;
   padding-left: 0;
 }
+
+@media screen and (max-width: 980px) {
+  body {
+    padding: 0 20px;
+  }
+}
