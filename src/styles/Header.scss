@@ -16,6 +16,10 @@ $en-font: 'Roc Grotesk', sans-serif;
   display: flex;
   margin-left: auto;
 
+  &__hamburger {
+    display: none;
+  }
+
   &__list {
     font-family: $en-font;
     font-weight: 900;
@@ -47,6 +51,58 @@ $en-font: 'Roc Grotesk', sans-serif;
 
     &:not(:last-child) {
       margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .Header {
+    height: 54px;
+
+    a {
+      position: relative;
+      top: 5px;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .navbar {
+    align-items: center;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+
+    &__hamburger {
+      display: block;
+      width: 16px;
+      height: 2px;
+      background-color: #000;
+
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 2px;
+        background-color: #000;
+        position: relative;
+      }
+
+      &:before {
+        top: -5px;
+      }
+
+      &:after {
+        top: 3px;
+      }
+    }
+
+    &__list {
+      // display: none;
     }
   }
 }

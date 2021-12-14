@@ -13,6 +13,7 @@ const Header = () => {
         <Logo />
       </Link>
       <ul className="navbar">
+        <div className="navbar__hamburger"></div>
         <li className={`navbar__list ${pathname === '/' ? 'active' : ''}`}>
           <Link to="/">about</Link>
         </li>
