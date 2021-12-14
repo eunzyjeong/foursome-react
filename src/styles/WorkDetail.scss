@@ -81,3 +81,60 @@
   line-height: 1.3333333333;
   font-weight: 400;
 }
+
+@media screen and (max-width: 980px) {
+  .detail {
+    &__title {
+      padding: 8px 0;
+
+      h1 {
+        font-size: 16px;
+        line-height: 1;
+      }
+    }
+
+    &__content {
+      display: block;
+
+      &--text {
+        border-right: none;
+        border-bottom: 2px solid #000;
+      }
+
+      &--img {
+        position: relative;
+        margin-top: 16px;
+      }
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 35% 65%;
+      border-bottom: 2px solid #000;
+
+      &--subtitle {
+        font-size: 12px;
+        font-weight: 800;
+        padding: 8px 0;
+        border-right: 2px solid #000;
+      }
+
+      &--content {
+        font-size: 12px;
+        font-weight: 400;
+        padding: 8px 12px;
+      }
+    }
+
+    &__description {
+      font-size: 12px;
+      line-height: 1.6666666667;
+      padding: 12px 0;
+      margin-top: 0;
+    }
+  }
+
+  .marquee-overflow {
+    font-size: 16px;
+  }
+}
