@@ -34,18 +34,18 @@ $en-font: 'Roc Grotesk', sans-serif;
       align-items: center;
     }
 
-    &:nth-child(1).active,
-    &:nth-child(1):hover {
-      color: $yellow;
-    }
-
     &:nth-child(2).active,
     &:nth-child(2):hover {
-      color: $blue;
+      color: $yellow;
     }
 
     &:nth-child(3).active,
     &:nth-child(3):hover {
+      color: $blue;
+    }
+
+    &:nth-child(4).active,
+    &:nth-child(4):hover {
       color: $pink;
     }
 
@@ -99,10 +99,6 @@ $en-font: 'Roc Grotesk', sans-serif;
       &:after {
         top: 3px;
       }
-    }
-
-    &__list {
-      // display: none;
     }
   }
 }
