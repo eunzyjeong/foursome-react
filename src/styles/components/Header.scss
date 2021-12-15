@@ -1,8 +1,4 @@
-// point color
-$blue: #009fe3;
-$yellow: #ffe500;
-$pink: #e6007e;
-$en-font: 'Montserrat', sans-serif;
+@import 'styles/base/Variables';
 
 .Header {
   height: 80px;
@@ -22,7 +18,7 @@ $en-font: 'Montserrat', sans-serif;
 
   &__list {
     font-weight: 900;
-    font-size: 24px;
+    font-size: 2.4rem;
     letter-spacing: 0;
     text-transform: uppercase;
     transition: color 0.2s ease-in-out;

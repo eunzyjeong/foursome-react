@@ -1,7 +1,7 @@
 import React from 'react';
 import Category from 'components/Category';
 
-import 'styles/BlogPost.scss';
+import 'styles/routes/BlogPost.scss';
 import postImg_1 from 'img/blog_post.png';
 
 const BlogPost = () => {

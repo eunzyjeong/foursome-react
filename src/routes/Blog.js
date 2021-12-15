@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Category from 'components/Category';
 import BlogData from 'data/Blog';
 
-import 'styles/Blog.scss';
+import 'styles/routes/Blog.scss';
 import blue from 'img/blue_box.png';
 import yellow from 'img/yellow_box.png';
 import pink from 'img/pink_box.png';

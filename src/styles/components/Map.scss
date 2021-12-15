@@ -1,4 +1,4 @@
-$blue: #009fe3;
+@import 'styles/base/Variables';
 
 #map {
   display: block;
@@ -11,9 +11,9 @@ $blue: #009fe3;
   top: -65px;
   padding: 10px 20px;
   border-radius: 50px;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
-  color: #000;
+  color: $black;
   background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid $blue;
 }

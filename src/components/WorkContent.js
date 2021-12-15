@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import 'styles/WorkContent.scss';
+import 'styles/components/WorkContent.scss';
 
 const WorkContents = ({ worksData }) => {
   return (

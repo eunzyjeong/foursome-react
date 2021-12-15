@@ -1,7 +1,7 @@
 import React from 'react';
 import Map from 'components/Map';
 
-import 'styles/About.scss';
+import 'styles/routes/About.scss';
 import QR from 'img/qr_code.png';
 
 const About = () => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-import 'styles/Map.scss';
+import 'styles/components/Map.scss';
 
 const Map = () => {
   const { kakao } = window;

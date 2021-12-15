@@ -1,12 +1,8 @@
-// point color
-$blue: #009fe3;
-$yellow: #ffe500;
-$pink: #e6007e;
-$en-font: 'Montserrat', sans-serif;
+@import 'styles/base/Variables';
 
 nav {
   height: 100%;
-  border-right: 2px solid #000;
+  border-right: 2px solid $black;
 }
 
 .category {
@@ -36,7 +32,7 @@ nav {
 @media screen and (max-width: 980px) {
   nav {
     border-right: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid $black;
     height: fit-content;
   }
 
@@ -48,7 +44,7 @@ nav {
       height: 32px;
       display: flex;
       align-items: center;
-      border-bottom: 2px solid #000;
+      border-bottom: 2px solid $black;
     }
 
     &__list {
@@ -59,7 +55,7 @@ nav {
       height: 100%;
       display: flex;
       align-items: center;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid $black;
     }
   }
 }

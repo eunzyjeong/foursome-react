@@ -1,5 +1,4 @@
-$titleColor: #fff;
-$categoryColor: #959595;
+@import 'styles/base/Variables';
 
 .Blog {
   display: grid;
@@ -37,14 +36,14 @@ $categoryColor: #959595;
 
   &__title {
     color: $titleColor;
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 1.3333333333;
     font-weight: 900;
   }
 
   &__category {
     color: $categoryColor;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 1;
     font-weight: 700;
   }
@@ -82,12 +81,12 @@ $categoryColor: #959595;
     }
 
     &__title {
-      font-size: 14px;
+      font-size: 1.4rem;
       line-height: 1.7142857143;
     }
 
     &__category {
-      font-size: 12px;
+      font-size: 1.2rem;
       line-height: 2;
     }
   }

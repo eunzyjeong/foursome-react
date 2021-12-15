@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import WorkData from 'data/Work';
 
-import 'styles/WorkDetail.scss';
+import 'styles/routes/WorkDetail.scss';
 
 const WorkDetail = () => {
   const { detailId } = useParams();

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import 'styles/Category.scss';
+import 'styles/components/Category.scss';
 
 const Category = ({ navList, currentPath }) => {
   const { pathname } = useLocation();

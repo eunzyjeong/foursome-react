@@ -1,3 +1,6 @@
+@import 'styles/base/Variables';
+@import 'styles/base/animation';
+
 .WorkContents {
   height: calc(100vh - 80px);
 }
@@ -21,17 +24,17 @@
 
 .work-content {
   &:not(:last-child) {
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid $black;
   }
 
   &__title {
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid $black;
     height: 96px;
     overflow: hidden;
 
     h1 {
       display: inline-block;
-      font-size: 64px;
+      font-size: 6.4rem;
       font-weight: 900;
       margin-left: 14px;
       animation: marquee 15s linear infinite running;
@@ -41,18 +44,18 @@
   &__list {
     display: grid;
     grid-template-columns: 30% 50% 20%;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid $black;
     height: 72px;
   }
 
   &__item {
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 2;
     padding: 0 24px;
     text-transform: uppercase;
 
     &:not(:last-child) {
-      border-right: 2px solid #000000;
+      border-right: 2px solid $black;
     }
   }
 
@@ -66,22 +69,13 @@
   }
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
 @media screen and (max-width: 980px) {
   .work-content {
     &__title {
       height: fit-content;
 
       h1 {
-        font-size: 16px;
+        font-size: 1.6rem;
         padding: 8px 0;
       }
     }
@@ -91,7 +85,7 @@
     }
 
     &__item {
-      font-size: 12px;
+      font-size: 1.2rem;
       line-height: 1;
       padding: 8px;
     }
