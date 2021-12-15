@@ -1,4 +1,4 @@
-.WorkContent {
+.WorkContents {
   height: calc(100vh - 80px);
 }
 
@@ -9,19 +9,25 @@
   padding: 0 30px;
 }
 
-.work-content {
+.work-contents {
   height: 100%;
   width: 100%;
   position: absolute;
+
+  a:hover h1 {
+    animation-play-state: paused;
+  }
+}
+
+.work-content {
+  &:not(:last-child) {
+    border-bottom: 2px solid #000000;
+  }
 
   &__title {
     border-bottom: 2px solid #000000;
     height: 96px;
     overflow: hidden;
-
-    &:hover h1 {
-      animation-play-state: paused;
-    }
 
     h1 {
       display: inline-block;
@@ -53,11 +59,7 @@
   &__img {
     width: 100%;
 
-    &:not(:last-child) {
-      border-bottom: 2px solid #000000;
-    }
-
-    & > img {
+    img {
       display: block;
       width: 100%;
     }
