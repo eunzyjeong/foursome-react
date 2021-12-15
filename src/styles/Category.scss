@@ -2,7 +2,7 @@
 $blue: #009fe3;
 $yellow: #ffe500;
 $pink: #e6007e;
-$en-font: 'roc-grotesk', sans-serif;
+$en-font: 'Montserrat', sans-serif;
 
 nav {
   height: 100%;
@@ -11,8 +11,7 @@ nav {
 
 .category {
   font-size: 2.4vw;
-  font-weight: 800;
-  line-height: 4vw;
+  line-height: 1.6666666667;
   margin-top: 16px;
 
   &__mobile {
@@ -21,6 +20,8 @@ nav {
 
   &__item {
     transition: color 0.2s ease-in-out;
+    font-family: $en-font;
+    font-weight: 900;
 
     &.blue:hover {
       color: $blue;

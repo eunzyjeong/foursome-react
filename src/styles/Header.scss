@@ -2,7 +2,7 @@
 $blue: #009fe3;
 $yellow: #ffe500;
 $pink: #e6007e;
-$en-font: 'Roc Grotesk', sans-serif;
+$en-font: 'Montserrat', sans-serif;
 
 .Header {
   height: 80px;
@@ -21,7 +21,6 @@ $en-font: 'Roc Grotesk', sans-serif;
   }
 
   &__list {
-    font-family: $en-font;
     font-weight: 900;
     font-size: 24px;
     letter-spacing: 0;
@@ -29,6 +28,7 @@ $en-font: 'Roc Grotesk', sans-serif;
     transition: color 0.2s ease-in-out;
 
     a {
+      font-family: $en-font;
       height: 100%;
       display: flex;
       align-items: center;
