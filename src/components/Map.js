@@ -26,7 +26,7 @@ const Map = () => {
     });
 
     marker.setMap(map);
-  }, []);
+  });
 
   return (
     <div
