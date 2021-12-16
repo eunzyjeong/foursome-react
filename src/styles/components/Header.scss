@@ -12,10 +12,6 @@
   display: flex;
   margin-left: auto;
 
-  &__hamburger {
-    display: none;
-  }
-
   &__list {
     font-weight: 900;
     font-size: 2.4rem;
@@ -30,18 +26,18 @@
       align-items: center;
     }
 
+    &:nth-child(1).active,
+    &:nth-child(1):hover {
+      color: $yellow;
+    }
+
     &:nth-child(2).active,
     &:nth-child(2):hover {
-      color: $yellow;
+      color: $blue;
     }
 
     &:nth-child(3).active,
     &:nth-child(3):hover {
-      color: $blue;
-    }
-
-    &:nth-child(4).active,
-    &:nth-child(4):hover {
       color: $pink;
     }
 
@@ -63,38 +59,6 @@
     svg {
       width: 24px;
       height: 24px;
-    }
-  }
-
-  .navbar {
-    align-items: center;
-    position: relative;
-    top: 5px;
-    cursor: pointer;
-
-    &__hamburger {
-      display: block;
-      width: 16px;
-      height: 2px;
-      background-color: #000;
-
-      &:before,
-      &:after {
-        content: '';
-        display: block;
-        width: 16px;
-        height: 2px;
-        background-color: #000;
-        position: relative;
-      }
-
-      &:before {
-        top: -5px;
-      }
-
-      &:after {
-        top: 3px;
-      }
     }
   }
 }
