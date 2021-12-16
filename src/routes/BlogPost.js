@@ -1,24 +1,11 @@
 import React from 'react';
-import Category from 'components/Category';
 
 import 'styles/routes/BlogPost.scss';
 import postImg_1 from 'img/blog_post.png';
 
 const BlogPost = () => {
-  const navList = [
-    'All',
-    'Foursome',
-    'News',
-    'VMD',
-    'Printing&press',
-    'Material',
-    'Coating',
-    'Ink'
-  ];
-
   return (
     <main className="BlogPost">
-      <Category navList={navList} currentPath="/blog" />
       <div className="scroll-area">
         <section className="post">
           <h1 className="post__title">어디든 자유롭게 꾸며봐</h1>
