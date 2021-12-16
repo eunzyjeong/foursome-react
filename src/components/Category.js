@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import 'styles/components/Category.scss';
-import dropdown from 'img/btn_dropdown.png';
+import dropdown from 'img/btn_dropdown.svg';
 
 const Category = ({ navList, currentPath }) => {
   const { pathname } = useLocation();
