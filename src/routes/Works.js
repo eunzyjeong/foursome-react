@@ -9,10 +9,10 @@ const Works = () => {
   const navList = ['All', 'Exhibition', 'Advertisement', 'Display', 'Goods'];
 
   return (
-    <div className="Works">
+    <main className="Works">
       <Category navList={navList} currentPath="/works" />
       <WorkContent worksData={WorksData} />
-    </div>
+    </main>
   );
 };
 
